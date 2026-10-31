@@ -1,0 +1,25 @@
+{
+ "model": "RetroDiffusion128xModel",
+ "width_px": 768,
+ "height_px": 256,
+ "steps": 20,
+ "guidance": 7.0,
+ "expected_factor": 8,
+ "palette_colors": 32,
+ "out_scale": 12,
+ "prompt": "pixel art, 1980s airbrushed custom van mural, {subject}, giant full moon, purple and orange gradient night sky, lightning, chrome highlights, bold silhouette, no text",
+ "negative": "text, letters, words, watermark, signature, border, frame, blurry, photo, 3d render, pentagram, gore",
+ "seeds_per_item": 3,
+ "items": [
+  {
+   "id": "castle_brooms",
+   "subject": "a dark castle on a hill, witches flying on brooms across the moon, wide landscape",
+   "seed": 8201
+  },
+  {
+   "id": "wizard_cliff",
+   "subject": "a wizard on a cliff casting lightning at the moon, ravens flying, wide landscape",
+   "seed": 7201
+  }
+ ]
+}
