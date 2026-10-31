@@ -1,0 +1,35 @@
+{
+ "model": "RetroDiffusion24x-64xModel",
+ "width_px": 1024,
+ "height_px": 512,
+ "steps": 30,
+ "guidance": 7.5,
+ "expected_factor": 8,
+ "palette_colors": 32,
+ "out_scale": 9,
+ "prompt": "pixel art, detailed 1980s airbrushed custom van mural, {subject}, huge glowing full moon, dramatic purple to orange sunset gradient sky, forked lightning, chrome rim light, high contrast, cinematic wide composition, crisp clean pixels",
+ "negative": "text, letters, words, watermark, signature, border, frame, blurry, muddy, lowres, duplicate, repeated, tiled, cropped, photo, 3d render, pentagram, gore",
+ "seeds_per_item": 4,
+ "items": [
+  {
+   "id": "witch_castle",
+   "subject": "a witch on a broomstick silhouetted against the moon above a dark gothic castle on a hill, ravens flying",
+   "seed": 9001
+  },
+  {
+   "id": "wizard_storm",
+   "subject": "a hooded wizard on a cliff edge raising a staff that shoots lightning at the moon, a raven on his shoulder",
+   "seed": 9101
+  },
+  {
+   "id": "raven_moon",
+   "subject": "a giant black raven with spread wings in front of the full moon above a gothic castle",
+   "seed": 9201
+  },
+  {
+   "id": "coven_cauldron",
+   "subject": "three witches around a glowing green cauldron on a hilltop, a black cat and a raven, a castle in the distance",
+   "seed": 9301
+  }
+ ]
+}

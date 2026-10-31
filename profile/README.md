@@ -1,4 +1,4 @@
-![Bevy Coven: a dark raven-winged figure on a rock under a full moon, with airbrushed purple and orange clouds and a streak of lightning, in pixel art](banner.png)
+![Bevy Coven: a black raven with spread wings flying across a yellow full moon, airbrushed pink and orange clouds on a purple sky, over a black city skyline, in pixel art](banner.png)
 
 The parts of a game that only grow with human authoring (levels, set dressing, dialogue, villagers' lives, interfaces, weather) should grow with agents too. Bevy Coven is a coven of Bevy crates that work alone or together, written into one grimoire, the Grimoire editor, with its agent, the Familiar, at your side.
 

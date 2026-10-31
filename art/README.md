@@ -3,9 +3,9 @@
 The bevy-coven avatar and banner: pixel art made on big with the local Retro Diffusion checkpoints (`/mnt/codex_fs/weights/RetroDiffusion*Model.safetensors`, SD 1.5), through the pipeline from Sanctuary's icon work (decision 0057). Motifs: dark magic and 80s airbrushed custom-van murals.
 
 - `coven_art.py`: the generator. Its docstring has the job schema.
-- `avatar.json`, `banner.json`, `banner-round2.json`: the jobs that were run.
-- `avatar.png` (512×512) and `banner.png` (1152×384): the winners. `../profile/banner.png` is a copy of the banner.
-- `avatar-sheet.png`, `banner-sheet-round1.png`, `banner-sheet-round2.png`: every candidate, for review.
+- `avatar.json`, `banner.json`, `banner-round2.json`, `banner-round3.json`: the jobs that were run.
+- `avatar.png` (512×512) and `banner.png` (1152×576): the winners. `banner-alt-wizard_storm-0.png` is the runner-up banner. `../profile/banner.png` is a copy of the banner.
+- `avatar-sheet.png`, `banner-sheet-round1.png`, `banner-sheet-round2.png`, `banner-sheet-round3.png`: every candidate, for review.
 
 ## Rerun
 
@@ -13,10 +13,10 @@ Copy `coven_art.py` and the job file to `big:~/coven-art/`, then:
 
 ```sh
 ssh big "bash -lc 'gpu-tenant run 3d --who bevy-coven-art@big --wait --mem 16G --note \"bevy-coven org art\" -- ~/sanctuary-icons/.venv/bin/python ~/coven-art/coven_art.py --jobs ~/coven-art/avatar.json --out ~/coven-art/runs/avatar-1'"
-ssh big "bash -lc 'gpu-tenant run 3d --who bevy-coven-art@big --wait --mem 16G --note \"bevy-coven org art\" -- ~/sanctuary-icons/.venv/bin/python ~/coven-art/coven_art.py --jobs ~/coven-art/banner-round2.json --out ~/coven-art/runs/banner-round2-2'"
+ssh big "bash -lc 'gpu-tenant run 3d --who bevy-coven-art@big --wait --mem 16G --note \"bevy-coven org art\" -- ~/sanctuary-icons/.venv/bin/python ~/coven-art/coven_art.py --jobs ~/coven-art/banner-round3.json --out ~/coven-art/runs/banner-round3-3'"
 ```
 
-The avatar winner is `runs/avatar-1/candidates/raven_grimoire-1.png` (seed 1002); the banner winner is `runs/banner-round2-2/candidates/wizard_cliff-2.png` (seed 7203). Generation is seeded, so the same checkpoint, diffusers version and GPU give the same image.
+The avatar winner is `runs/avatar-1/candidates/raven_grimoire-1.png` (seed 1002); the banner winner is `runs/banner-round3-3/candidates/raven_moon-3.png` (seed 9204). Generation is seeded, so the same checkpoint, diffusers version and GPU give the same image.
 
 ## How the winners were picked
 
@@ -74,3 +74,28 @@ Round 1's best reached the threshold of 7 only because its grid was wrong, so ro
 |**wizard_cliff-2**|7203|2|2|2|2|2|**10**|
 
 `wizard_cliff-2` and `castle_brooms-2` tie at 10; the banner goes to `wizard_cliff-2`, a dark raven-winged figure on a rock under a full moon, with airbrushed purple, orange and yellow cloud bands and a lightning streak, because its figure is a raven.
+
+### Banner, round 3 (16 candidates; `RetroDiffusion24x-64xModel`, 1024×512, 30 steps, guidance 7.5, `expected_factor` 8, `out_scale` 9)
+
+The owner rejected the round 2 winner: at 96×32 native pixels the figure was a smear. Round 3 used the checkpoint that made the avatar, a 2:1 frame (SD 1.5 repeats its subject across a 3:1 one) and a 128×64 native grid, with a sharper prompt (`banner-round3.json`). Every candidate recovered a clean 128×64 grid.
+
+|Candidate|Seed|a|b|c|d|e|Total|
+|---|---|---|---|---|---|---|---|
+|witch_castle-0|9001|1|1|2|1|2|7|
+|witch_castle-1|9002|2|1|2|1|2|8|
+|witch_castle-2|9003|1|0|2|1|2|6|
+|witch_castle-3|9004|1|1|2|2|2|8|
+|wizard_storm-0|9101|2|2|2|1|2|9|
+|wizard_storm-1|9102|1|1|2|1|2|7|
+|wizard_storm-2|9103|1|1|2|1|2|7|
+|wizard_storm-3|9104|1|1|2|2|2|8|
+|raven_moon-0|9201|2|2|2|1|2|9|
+|raven_moon-1|9202|2|2|2|1|2|9|
+|raven_moon-2|9203|1|1|2|2|2|8|
+|**raven_moon-3**|9204|2|2|2|2|2|**10**|
+|coven_cauldron-0|9301|1|1|2|1|2|7|
+|coven_cauldron-1|9302|1|1|2|1|2|7|
+|coven_cauldron-2|9303|1|1|2|1|2|7|
+|coven_cauldron-3|9304|1|0|2|1|2|6|
+
+The banner is `raven_moon-3`: a black raven with spread wings flying across a yellow moon, airbrushed pink and orange clouds on a purple sky, over a black city skyline. It fills the frame edge to edge, which a banner needs. The runner-up, `wizard_storm-0` (a hooded wizard and a raven on a rock before a huge moon), is kept as `banner-alt-wizard_storm-0.png`; it loses on the motif because a dark vignette rims its corners.
