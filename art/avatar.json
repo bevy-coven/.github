@@ -1,0 +1,40 @@
+{
+ "model": "RetroDiffusion24x-64xModel",
+ "width_px": 512,
+ "height_px": 512,
+ "steps": 20,
+ "guidance": 7.0,
+ "expected_factor": 8,
+ "palette_colors": 24,
+ "out_scale": 8,
+ "prompt": "pixel art, 1980s airbrushed custom van mural, {subject}, giant full moon, purple and orange gradient night sky, lightning, chrome highlights, bold silhouette, no text",
+ "negative": "text, letters, words, watermark, signature, border, frame, blurry, photo, 3d render, pentagram, gore",
+ "seeds_per_item": 2,
+ "items": [
+  {
+   "id": "raven_grimoire",
+   "subject": "a black raven familiar perched on a glowing open spellbook",
+   "seed": 1001
+  },
+  {
+   "id": "witch_moon",
+   "subject": "a hooded witch silhouette with glowing eyes in front of the moon",
+   "seed": 2001
+  },
+  {
+   "id": "cat_grimoire",
+   "subject": "a black cat familiar with glowing green eyes sitting on a spellbook",
+   "seed": 3001
+  },
+  {
+   "id": "grimoire_runes",
+   "subject": "an open grimoire with glowing runes rising from its pages",
+   "seed": 4001
+  },
+  {
+   "id": "raven_hat",
+   "subject": "a black raven wearing a pointed witch hat",
+   "seed": 5001
+  }
+ ]
+}
