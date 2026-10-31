@@ -57,8 +57,15 @@ Each rule below either comes from one of these papers or is labelled house style
 
 - One idea each: 3 to 8 seconds, looping, at most 960 px wide, 15 fps and 4 MB.
 - Alt text says what happens; a one-line caption sits under the GIF.
-- Stored in `docs/media/`, referenced by a relative path, and never in Git LFS. crates.io rewrites relative images to `https://github.com/<repository>/raw/HEAD/<path>`, so they show there too.
-- Never an absolute `raw.githubusercontent.com/...` URL: it breaks when a repository moves.
+- Stored in `docs/media/` and never in Git LFS.
+
+## Image and link URLs in a README
+
+A README is shown in three places, and they resolve paths differently: GitHub resolves a relative path against the repository; crates.io rewrites a relative path to `https://github.com/<repository>/raw/HEAD/<path>`; **docs.rs rewrites nothing**, so a relative path in a README that rustdoc includes (`#![doc = include_str!("../README.md")]`) is a broken image there. So:
+
+- Every image in a crate's README is an absolute URL: `https://raw.githubusercontent.com/bevy-coven/<repo>/main/<path-from-repo-root>`. Every link to a file in the repository is `https://github.com/bevy-coven/<repo>/blob/main/<path>`. Pages under `docs/` that only GitHub shows may stay relative.
+- **A media file is never moved or renamed once a release has shipped pointing at it.** A published README is frozen on crates.io and docs.rs, so its URLs must keep resolving. If one must move, cut a release with the new URLs the same day, so the latest version's pages show it.
+- The check is an HTTP one: every `<img src>` on the crate's docs.rs and crates.io pages answers 200. `lychee --offline` only checks what stays relative.
 
 ## Videos
 
