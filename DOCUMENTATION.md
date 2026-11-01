@@ -33,7 +33,7 @@ Each rule below either comes from one of these papers or is labelled house style
 8. **Quick start**: the `cargo add` line (a git dependency for an unpublished crate) and at most 20 lines of Rust that compile.
 9. **Try it**: one `cargo run --example <name>` that opens the hero GIF's scene.
 10. **What you can do**: 3 to 7 bullets of one sentence each, each linking a docs page, with at most 4 inline GIFs.
-11. **Part of the Coven**: two sentences linking the [family table](https://github.com/bevy-coven) and this crate's "use it in Grimoire" section of [the book](https://bevy-coven.github.io/).
+11. **Part of the Coven**: two sentences linking the [family table](https://github.com/bevy-coven) and this crate's "use it in the Cauldron" section of [the book](https://bevy-coven.github.io/).
 12. **Bevy compatibility**: a table of crate versions against Bevy versions.
 13. **Learn more**: docs.rs, the book page, `docs/guide/`, the examples and the CHANGELOG. Links are the README feature that correlates most strongly with popularity (Venigalla & Chimalakonda).
 14. **Who and licence**: maintainer `@Ladvien`, the issues link, the org's [`CONTRIBUTING.md`](https://github.com/bevy-coven/.github/blob/main/CONTRIBUTING.md), and `MIT OR Apache-2.0`.

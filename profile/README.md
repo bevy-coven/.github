@@ -1,6 +1,6 @@
 ![Bevy Coven: a black raven with spread wings flying across a yellow full moon, airbrushed pink and orange clouds on a purple sky, over a black city skyline, in pixel art](banner.png)
 
-The parts of a game that only grow with human authoring (levels, set dressing, dialogue, villagers' lives, interfaces, weather) should grow with agents too. Bevy Coven is a coven of Bevy crates that work alone or together, written into one grimoire, the Grimoire editor, with its agent, the Familiar, at your side.
+The parts of a game that only grow with human authoring (levels, set dressing, dialogue, villagers' lives, interfaces, weather) should grow with agents too. Bevy Coven is a coven of Bevy crates that work alone or together. What the coven knows is written into one grimoire, which your game loads. The Cauldron is the editor where you and its agent, the Familiar, write it.
 
 > ⚠️ **Vibe Coded.** Written by AI agents working from a human's direction, covered by tests rather than a line-by-line human review. Read the code before you rely on it for something you care about.
 
@@ -8,7 +8,8 @@ The parts of a game that only grow with human authoring (levels, set dressing, d
 
 |Part|Crate|What it does|Latest|Docs|
 |---|---|---|---|---|
-|**The grimoire**|[bevy_grimoire](https://github.com/bevy-coven/bevy_grimoire)|An editor that learns a world's grammar from your example and builds more.|[![crates.io](https://img.shields.io/crates/v/bevy_grimoire.svg)](https://crates.io/crates/bevy_grimoire)|[docs.rs](https://docs.rs/bevy_grimoire) · [book](https://bevy-coven.github.io/crates/bevy_grimoire.html)|
+|**The grimoire**|[bevy_grimoire](https://github.com/bevy-coven/bevy_grimoire)|The knowledge a game loads: a library of pieces and a map, with the grammar learned from your example.|[![crates.io](https://img.shields.io/crates/v/bevy_grimoire.svg)](https://crates.io/crates/bevy_grimoire)|[docs.rs](https://docs.rs/bevy_grimoire) · [book](https://bevy-coven.github.io/crates/bevy_grimoire.html)|
+|**The Cauldron**|[bevy_cauldron](https://github.com/bevy-coven/bevy_grimoire/tree/main/crates)|The editor that writes the grimoire: you and the Familiar place pieces, and the learned grammar brews more. It lives in the bevy_grimoire repository.|git only|[book](https://bevy-coven.github.io/crates/bevy_grimoire.html)|
 |**World**|[bevy_elements](https://github.com/bevy-coven/bevy_elements)|Sky, weather, wind, clouds, terrain and water, simulated in compute shaders.|[![crates.io](https://img.shields.io/crates/v/bevy_elements.svg)](https://crates.io/crates/bevy_elements)|[docs.rs](https://docs.rs/bevy_elements) · [book](https://bevy-coven.github.io/crates/bevy_elements.html)|
 ||[bevy_flora](https://github.com/bevy-coven/bevy_flora)|Procedural stylized trees and shrubs that grow over time.|[![crates.io](https://img.shields.io/crates/v/bevy_flora.svg)](https://crates.io/crates/bevy_flora)|[docs.rs](https://docs.rs/bevy_flora) · [book](https://bevy-coven.github.io/crates/bevy_flora.html)|
 ||[isomesh](https://github.com/bevy-coven/isomesh)|`isomesh` and `bevy_isomesh`: signed distance fields in, meshes out, with caves and carving.|[![crates.io](https://img.shields.io/crates/v/isomesh.svg)](https://crates.io/crates/isomesh) [![crates.io](https://img.shields.io/crates/v/bevy_isomesh.svg)](https://crates.io/crates/bevy_isomesh)|[docs.rs](https://docs.rs/bevy_isomesh) · [book](https://bevy-coven.github.io/crates/isomesh.html)|
@@ -24,6 +25,6 @@ The parts of a game that only grow with human authoring (levels, set dressing, d
 
 ## Start here
 
-- [The Bevy Coven book](https://bevy-coven.github.io/): how the crates fit together, and how to use each one alone or in Grimoire.
+- [The Bevy Coven book](https://bevy-coven.github.io/): how the crates fit together, and how to use each one alone or in the Cauldron.
 - [How every crate is documented](https://github.com/bevy-coven/.github/blob/main/DOCUMENTATION.md).
 - [Contributing](https://github.com/bevy-coven/.github/blob/main/CONTRIBUTING.md).
