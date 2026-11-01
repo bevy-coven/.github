@@ -1,4 +1,4 @@
-![Bevy Coven: a black raven with spread wings flying across a yellow full moon, airbrushed pink and orange clouds on a purple sky, over a black city skyline, in pixel art](banner.png)
+![Bevy Coven: a black raven with spread wings flying across a yellow full moon, over the black rooftops and clock tower of a town under airbrushed pink and purple clouds, with bats and lightning, in pixel art](banner.png)
 
 The parts of a game that only grow with human authoring (levels, set dressing, dialogue, villagers' lives, interfaces, weather) should grow with agents too. Bevy Coven is a coven of Bevy crates that work alone or together. What the coven knows is written into one grimoire, which your game loads. The Cauldron is the editor where you and its agent, the Familiar, write it.
 

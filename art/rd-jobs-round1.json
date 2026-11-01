@@ -1,0 +1,48 @@
+[
+ {
+  "name": "av_fantasy",
+  "prompt": "A black raven with glossy purple-violet feather highlights perched in front of a huge glowing yellow full moon, wings half raised, a ring of purple and orange light around the moon, dark magic, 1980s airbrushed custom van mural, bold clean silhouette, centered, deep purple night sky background, no text",
+  "prompt_style": "rd_pro__fantasy",
+  "width": 256,
+  "height": 256,
+  "num_images": 4,
+  "seed": 101
+ },
+ {
+  "name": "av_default",
+  "prompt": "A black raven with glossy purple-violet feather highlights perched in front of a huge glowing yellow full moon, wings half raised, a ring of purple and orange light around the moon, dark magic, 1980s airbrushed custom van mural, bold clean silhouette, centered, deep purple night sky background, no text",
+  "prompt_style": "rd_pro__default",
+  "width": 256,
+  "height": 256,
+  "num_images": 4,
+  "seed": 202
+ },
+ {
+  "name": "av_ref",
+  "prompt": "A black raven with glossy purple-violet feather highlights perched in front of a huge glowing yellow full moon, wings half raised, a ring of purple and orange light around the moon, dark magic, 1980s airbrushed custom van mural, bold clean silhouette, centered, deep purple night sky background, no text, richer detail",
+  "prompt_style": "rd_pro__default",
+  "width": 256,
+  "height": 256,
+  "num_images": 2,
+  "seed": 303,
+  "reference": "/tmp/rd-art/avatar-v1-ref-64.png"
+ },
+ {
+  "name": "bn_fantasy",
+  "prompt": "A black raven flying across a giant glowing yellow full moon with its wings spread wide, airbrushed pink and orange clouds in a purple twilight sky, black town skyline silhouette at the bottom with a tall tower, a few small bats, lightning glow, 1980s airbrushed custom van mural, dark magic, wide panoramic composition, no text",
+  "prompt_style": "rd_pro__fantasy",
+  "width": 256,
+  "height": 128,
+  "num_images": 3,
+  "seed": 404
+ },
+ {
+  "name": "bn_default",
+  "prompt": "A black raven flying across a giant glowing yellow full moon with its wings spread wide, airbrushed pink and orange clouds in a purple twilight sky, black town skyline silhouette at the bottom with a tall tower, a few small bats, lightning glow, 1980s airbrushed custom van mural, dark magic, wide panoramic composition, no text",
+  "prompt_style": "rd_pro__default",
+  "width": 256,
+  "height": 128,
+  "num_images": 3,
+  "seed": 505
+ }
+]

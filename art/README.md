@@ -1,11 +1,17 @@
 # Org art
 
-The bevy-coven avatar and banner: pixel art made on big with the local Retro Diffusion checkpoints (`/mnt/codex_fs/weights/RetroDiffusion*Model.safetensors`, SD 1.5), through the pipeline from Sanctuary's icon work (decision 0057). Motifs: dark magic and 80s airbrushed custom-van murals.
+The bevy-coven avatar and banner: pixel art with dark magic and 80s airbrushed custom-van murals as its motifs. **The current ones (2026-11-01) come from the Retro Diffusion cloud API, RD Pro** (see "Round 4" below). The first set was made on big with the local Retro Diffusion checkpoints (`/mnt/codex_fs/weights/RetroDiffusion*Model.safetensors`, SD 1.5), through the pipeline from Sanctuary's icon work (decision 0057); it is kept as `avatar-v1-local.png` and `banner-v1-local.png`.
 
-- `coven_art.py`: the generator. Its docstring has the job schema.
-- `avatar.json`, `banner.json`, `banner-round2.json`, `banner-round3.json`: the jobs that were run.
-- `avatar.png` (512×512) and `banner.png` (1152×576): the winners. `banner-alt-wizard_storm-0.png` is the runner-up banner. `../profile/banner.png` is a copy of the banner.
-- `avatar-sheet.png`, `banner-sheet-round1.png`, `banner-sheet-round2.png`, `banner-sheet-round3.png`: every candidate, for review.
+- `avatar.png` (512×512) and `avatar-1024.png`: the current avatar, `av_ref-0` of round 4: a raven on a branch before an orange-yellow moon, purple ring, native 256×256 at 2× and 4× nearest-neighbour. `banner.png` (1024×512, native 256×128 at 4×): the current banner, `bn_fantasy-0`: a raven flying across a yellow full moon over a town of black rooftops and a clock tower, with bats and lightning. `../profile/banner.png` is a copy of the banner.
+- `rd_api.py`: the Retro Diffusion v2 client used for round 4 (`python3 rd_api.py rd-jobs-round1.json OUTDIR [--cost-only]`). It reads the key from `~/.config/retrodiffusion/api_key` and never takes it from an argument. `rd-jobs-round1.json` holds the five jobs (seeds and prompts are in it); `avatar-sheet-rd.png` and `banner-sheet-rd.png` show every candidate.
+- `coven_art.py`: the local generator for round 1 to 3. Its docstring has the job schema.
+- `avatar.json`, `banner.json`, `banner-round2.json`, `banner-round3.json`: the local jobs that were run. `avatar-sheet.png`, `banner-sheet-round1.png`, `banner-sheet-round2.png`, `banner-sheet-round3.png` show their candidates. `banner-alt-wizard_storm-0.png` is the local runner-up banner.
+
+## Round 4: the Retro Diffusion cloud API (2026-11-01)
+
+RD Pro (`rd_pro__default` and `rd_pro__fantasy`, 256 px, $0.18 an image, 16 images for $2.88) draws far more detail than the local SD 1.5 checkpoints: feathers, a textured moon, rooftops with lit windows. The API is `POST https://api.retrodiffusion.ai/v2/inferences` with the header `X-RD-Token`, a fresh `Idempotency-Key` per paid request, then `GET .../tasks/{task_id}` until it succeeds; `"check_cost": true` prices a request for free (and takes no idempotency key). The reference is https://github.com/Retro-Diffusion/api-examples.
+
+The avatar's winner used the v1 avatar, scaled to its native 64×64, as `reference_images`, so the raven and the moon stayed recognisable, and read best at 40 px of the ten avatars. The banner's winner kept the brand's yellow moon where `bn_fantasy-2` went pale lavender. A prompt names the subject and the mood only (`rd_pro` handles the pixel-art rendering), and says "no text".
 
 ## Rerun
 
