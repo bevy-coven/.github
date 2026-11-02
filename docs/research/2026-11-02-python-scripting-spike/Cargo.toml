@@ -1,0 +1,9 @@
+[package]
+name = "monty_spike"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+monty = "1.4.0"
+monty-types = "1.4.0"
+rhai = "1.27.0"
