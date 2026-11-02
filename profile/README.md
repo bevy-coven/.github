@@ -26,5 +26,8 @@ The parts of a game that only grow with human authoring (levels, set dressing, d
 ## Start here
 
 - [The Bevy Coven book](https://bevy-coven.github.io/): how the crates fit together, and how to use each one alone or in the Cauldron.
+- [What the Coven is and where it is going](https://github.com/bevy-coven/.github/blob/main/VISION.md): the goals, the projects, and the names (Coven, grimoire, Cauldron).
+- [How the crates fit together](https://github.com/bevy-coven/.github/blob/main/docs/ARCHITECTURE.md): the layers, the one real dependency edge, and the engine-free crates.
+- [How the Coven writes code](https://github.com/bevy-coven/.github/blob/main/docs/STYLE.md): naming, dependencies, layout, Rust, tests and shipping.
 - [How every crate is documented](https://github.com/bevy-coven/.github/blob/main/DOCUMENTATION.md).
 - [Contributing](https://github.com/bevy-coven/.github/blob/main/CONTRIBUTING.md).
