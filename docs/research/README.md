@@ -36,6 +36,10 @@ These are cited by [`DOCUMENTATION.md`](../../DOCUMENTATION.md), and a new claim
 - Chatlatanagulchai et al. 2026, *Agent READMEs* — [10.1145/3840295](https://doi.org/10.1145/3840295)
 - Gloaguen et al. 2026, *Evaluating AGENTS.md* — [arXiv 2602.11988](https://arxiv.org/abs/2602.11988)
 
+## Documents
+
+- [`2026-11-02-python-scripting.md`](2026-11-02-python-scripting.md): can the Coven script its crates in Python (Monty, RustPython, PyO3) without losing performance or determinism? **Shelved**: measured, but no concrete need yet. Harness in [`2026-11-02-python-scripting-spike/`](2026-11-02-python-scripting-spike/).
+
 ## Already open, and needing a document here
 
 Two questions the family currently answers by living with an inconsistency. Each deserves a file:
