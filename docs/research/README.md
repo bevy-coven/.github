@@ -39,6 +39,7 @@ These are cited by [`DOCUMENTATION.md`](../../DOCUMENTATION.md), and a new claim
 ## Documents
 
 - [`2026-11-02-python-scripting.md`](2026-11-02-python-scripting.md): can the Coven script its crates in Python (Monty, RustPython, PyO3) without losing performance or determinism? **Shelved**: measured, but no concrete need yet. Harness in [`2026-11-02-python-scripting-spike/`](2026-11-02-python-scripting-spike/).
+- [`2026-11-02-game-editor-best-practices.md`](2026-11-02-game-editor-best-practices.md): what the little published guidance on game editors and agent interfaces says, compared with the Cauldron. **Findings only**; the home-still corpus has almost nothing on editors.
 
 ## Already open, and needing a document here
 
