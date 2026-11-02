@@ -38,6 +38,7 @@ These are cited by [`DOCUMENTATION.md`](../../DOCUMENTATION.md), and a new claim
 
 ## Documents
 
+- [`2026-11-02-why-bevy-grimoire-issues-are-blocked.md`](2026-11-02-why-bevy-grimoire-issues-are-blocked.md): why 35 of the 39 open editor issues are `blocked`, and how many each crate holds. One issue waits on a crate (`bevy_elements`); 29 wait on one decision about protected test files.
 - [`2026-11-02-python-scripting.md`](2026-11-02-python-scripting.md): can the Coven script its crates in Python (Monty, RustPython, PyO3) without losing performance or determinism? **Shelved**: measured, but no concrete need yet. Harness in [`2026-11-02-python-scripting-spike/`](2026-11-02-python-scripting-spike/).
 
 ## Already open, and needing a document here
