@@ -16,7 +16,7 @@ The home-still corpus holds **no paper on game-editor design**. Searches for edi
 | Yang et al., *SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering*, NeurIPS 2024, DOI 10.52202/079017-1601 (arXiv 2405.15793) | web, full text read in part (first 100,000 of 204,000 characters) | **measured** for the numbers below |
 | Bevy editor prototypes design page, and the Bevy "editor questions" document | web, read | **reported** (plans, not results) |
 | Search results on Unity, Godot and Unreal MCP servers | web search snippets only | **reported, unverified**; I did not open the vendors' documentation |
-| Lightbown, *Designing the User Experience of Game Development Tools*, 2nd ed., 2025, DOI 10.1201/9781003597780 | found by search, **not read** | **unread**; the most relevant book, worth acquiring |
+| Lightbown, *Designing the User Experience of Game Development Tools*, 2nd ed., 2025, DOI 10.1201/9781003597780 | the 2025 second edition was **not obtained**; the 2015 first edition was later added to home-still and is covered in [`2026-11-02-game-editor-guidance.md`](2026-11-02-game-editor-guidance.md) | **unread in the 2025 edition** |
 
 So this note is a small synthesis of three solid sources. It is not a survey of how Unity, Unreal or Godot are built, and I did not read their code.
 
