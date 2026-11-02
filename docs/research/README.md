@@ -49,3 +49,4 @@ Two questions the family currently answers by living with an inconsistency. Each
 
 - **Do engine-free crates keep the `bevy_` prefix?** Four crates say yes (`bevy_grimoire_rng`, `_solver`, `_snip`, `bevy_oracle`), `isomesh` says no. Renaming is a breaking change to published crates and to `bevy_society`'s dependency.
 - **Which `bevy_devshot` is the real one?** The workspace copy is unpublished and the standalone repository exists; crates.io reserves the name once.
+- [`2026-11-02-plugin-interface.md`](2026-11-02-plugin-interface.md): what a plugin interface on top of Bevy's `Plugin` could be, what the Cauldron has today (compile-time family crates, a hardcoded list), and what VS Code and Godot do. 12 rules, 5 owner decisions. **No papers read: the corpus search was down**; web pages only.
