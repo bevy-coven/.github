@@ -115,7 +115,7 @@ I did not audit the editor against these rules. The table lists what I already k
 
 The sources say little or nothing about the following, so I will not write rules for them from memory. Each could be a separate research item.
 
-- **Architecture and data model:** scene format, source of truth, schema migration, extension and plugin interfaces and their stability.
+- **Architecture and data model:** partly covered in [`2026-11-02-editor-architecture-and-data.md`](2026-11-02-editor-architecture-and-data.md) (versions, compatibility, merging, layering). Still open: runtime architecture and the extension interface.
 - **Testing:** how to test an editor (UI, undo, agent parity), flaky-test policy, the "protected test" rule that blocks 29 issues.
 - **Performance budgets** for large scenes and responsiveness targets beyond the three response-time limits.
 - **Accessibility** beyond contrast (keyboard-only use, screen readers, motion).
